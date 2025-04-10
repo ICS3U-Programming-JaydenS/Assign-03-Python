@@ -23,8 +23,6 @@ def main():
 
         # Match case for the main course with the other options as if's
         match main_course_int:
-
-            # If the main course is a wrap
             case 1:
                 subtotal = constants.SHAWARMA_WRAP
 
