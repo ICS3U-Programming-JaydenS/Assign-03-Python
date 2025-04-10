@@ -20,8 +20,6 @@ def main():
         main_course_int = int(main_course)
         side_course_int = int(side_course)
         drink_int = int(drink)
-
-        # Match case for the main course with the other options as if's
         match main_course_int:
             case 1:
                 subtotal = constants.SHAWARMA_WRAP
