@@ -27,11 +27,13 @@ def main():
             # If the main course is a wrap
             case 1:
                 subtotal = constants.SHAWARMA_WRAP
+
                 # Checks for all possible side and drink combos
                 if side_course_int == 1:
                     subtotal = subtotal + constants.MEAT
                 elif side_course_int == 0:
                     subtotal = subtotal + constants.VEGETABLE
+
                     # If side course is invalid
                 else:
                     print("Please enter a valid side course option!")
@@ -44,7 +46,7 @@ def main():
                 elif drink_int == 0:
                     tax = subtotal * constants.HST
                     total = subtotal + tax
-                    print("Total cost is: ${:.2f}".format(total))
+                    print("Total cost is: ${:.2f}" .format(total))
                 # If drink selection is invalid
                 else:
                     print("Please enter a valid drink option!")
@@ -55,6 +57,7 @@ def main():
                     subtotal = subtotal + constants.MEAT
                 elif side_course_int == 0:
                     subtotal = subtotal + constants.VEGETABLE
+            
                 # If side course is invalid
                 else:
                     print("Please enter a valid side course option!")
@@ -63,17 +66,20 @@ def main():
                     subtotal = subtotal + constants.DRINK
                     tax = subtotal * constants.HST
                     total = subtotal + tax
-                    print("Total cost is: ${:.2f}".format(total))
+                    print("Total cost is: ${:.2f}" .format(total))
                 elif drink_int == 0:
                     tax = subtotal * constants.HST
                     total = subtotal + tax
-                    print("Total cost is: ${:.2f}".format(total))
+                    print("Total cost is: ${:.2f}" .format(total))
+
                 # If drink selection is invalid
                 else:
                     print("Invalid drink course option. Please enter 0 or 1.")
+
             # What happens if the main course is not one of the options
             case _:
                 print("Invalid main course option. Please enter 0 or 1.")
+
     # What happens if the user selection is not a integer
     except ValueError:
         print("Please pick a valid menu option (enter 0 or 1)!")
