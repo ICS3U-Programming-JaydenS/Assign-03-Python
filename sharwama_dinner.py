@@ -46,10 +46,12 @@ def main():
                 elif drink_int == 0:
                     tax = subtotal * constants.HST
                     total = subtotal + tax
-                    print("Total cost is: ${:.2f}" .format(total))
+                    print("Total cost is: ${:.2f}".format(total))
+
                 # If drink selection is invalid
                 else:
                     print("Please enter a valid drink option!")
+
             # If it is a plate
             case 0:
                 subtotal = constants.SHAWARMA_PLATE
@@ -57,7 +59,7 @@ def main():
                     subtotal = subtotal + constants.MEAT
                 elif side_course_int == 0:
                     subtotal = subtotal + constants.VEGETABLE
-            
+
                 # If side course is invalid
                 else:
                     print("Please enter a valid side course option!")
@@ -66,11 +68,11 @@ def main():
                     subtotal = subtotal + constants.DRINK
                     tax = subtotal * constants.HST
                     total = subtotal + tax
-                    print("Total cost is: ${:.2f}" .format(total))
+                    print("Total cost is: ${:.2f}".format(total))
                 elif drink_int == 0:
                     tax = subtotal * constants.HST
                     total = subtotal + tax
-                    print("Total cost is: ${:.2f}" .format(total))
+                    print("Total cost is: ${:.2f}".format(total))
 
                 # If drink selection is invalid
                 else:
