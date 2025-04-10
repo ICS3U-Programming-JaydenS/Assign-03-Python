@@ -58,7 +58,7 @@ def main():
                 elif side_course_int == 0:
                     subtotal = subtotal + constants.VEGETABLE
 
-                # If side course is invalid
+                # If side course is invalid this happens
                 else:
                     print("Please enter a valid side course option!")
                     return ()
