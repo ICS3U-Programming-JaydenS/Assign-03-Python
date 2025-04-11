@@ -38,7 +38,7 @@ def main():
                         total = subtotal + tax
                         print("Total cost is: ${:.2f}".format(total))
 
-                # If drink selection is invalid
+                    # If drink selection is invalid
                     else:
                         print("Please enter a valid drink option!")
                 elif side_course_int == 0:
@@ -59,7 +59,6 @@ def main():
                     # If side course is invalid
                 else:
                     print("Please enter a valid side course option!")
-            
 
             # If it is a plate
             case 0:
@@ -76,7 +75,7 @@ def main():
                         total = subtotal + tax
                         print("Total cost is: ${:.2f}".format(total))
 
-                # If drink selection is invalid
+                    # If drink selection is invalid
                     else:
                         print("Please enter a valid drink option!")
                 elif side_course_int == 0:
@@ -102,7 +101,7 @@ def main():
             case _:
                 print("Invalid main course option. Please enter 0 or 1.")
 
-    # What happens if the user selection is not a integer
+    # What happens if the uer selection is not a integer
     except ValueError:
         print("Please pick a valid menu option (enter 0 or 1)!")
 
