@@ -101,7 +101,7 @@ def main():
             case _:
                 print("Invalid main course option. Please enter 0 or 1.")
 
-    # What happens if the uer selection is not a integer
+    # What happens if the user selection is not a integer
     except ValueError:
         print("Please pick a valid menu option (enter 0 or 1)!")
 
