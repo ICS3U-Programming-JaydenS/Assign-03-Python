@@ -8,6 +8,9 @@ import constants
 
 def main():
 
+    # Code first greets user
+    print ("Hello! Welcome to Jayden's Dinner Calculator!")
+
     # Sets subtotal and user menu selections
     subtotal = 0
 
